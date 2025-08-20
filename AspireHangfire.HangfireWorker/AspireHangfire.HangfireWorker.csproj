@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-AspireHangfire.HangfireWorker-97bf99ac-87b3-4ef9-b339-6a0c682e9507</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.NetCore" Version="1.8.21" />
+    <PackageReference Include="Hangfire.Redis.StackExchange" Version="1.12.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspireHangfire.ServiceDefaults\AspireHangfire.ServiceDefaults.csproj" />
+  </ItemGroup>
+</Project>
