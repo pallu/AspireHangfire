@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36221.1 d17.14
+VisualStudioVersion = 17.14.36221.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireHangfire.AppHost", "AspireHangfire.AppHost\AspireHangfire.AppHost.csproj", "{BA78F233-71F8-47D7-972A-6AE2BBE25F90}"
 EndProject
@@ -11,6 +11,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireHangfire.Web", "AspireHangfire.Web\AspireHangfire.Web.csproj", "{3AA63850-CAF1-F54C-6EEE-BFA8A5C7C3DE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireHangfire.HangfireWorker", "AspireHangfire.HangfireWorker\AspireHangfire.HangfireWorker.csproj", "{CED71520-1D95-6A12-25F0-FBD169B95B42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireHangfire.JobLibrary", "AspireHangfire.JobLibrary\AspireHangfire.JobLibrary.csproj", "{DAF06AE8-11DF-40DF-ABD0-D2DD0222CC13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{CED71520-1D95-6A12-25F0-FBD169B95B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CED71520-1D95-6A12-25F0-FBD169B95B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CED71520-1D95-6A12-25F0-FBD169B95B42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAF06AE8-11DF-40DF-ABD0-D2DD0222CC13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF06AE8-11DF-40DF-ABD0-D2DD0222CC13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF06AE8-11DF-40DF-ABD0-D2DD0222CC13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF06AE8-11DF-40DF-ABD0-D2DD0222CC13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

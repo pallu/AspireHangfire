@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using AspireHangfire.JobLibrary
 @using Hangfire
 
 <PageTitle>Home</PageTitle>
@@ -19,6 +20,8 @@ Welcome to your new app.
 
     private void EnqueueJob()
     {
-        str = backgroundJobClient.Enqueue(() => Console.WriteLine("Hello from Hangfire!"));
+        //str = backgroundJobClient.Enqueue(() => Console.WriteLine("Hello from Hangfire!"));
+        var message = $"Hello from Hangfire! The time is {DateTime.UtcNow:O}";
+        str = backgroundJobClient.Enqueue<IPrintingJobs>(x => x.PrintMessageAsync(message));
     }
 }

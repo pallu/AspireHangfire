@@ -1,3 +1,4 @@
+using AspireHangfire.JobLibrary;
 using Hangfire;
 using Hangfire.Redis.StackExchange;
 namespace AspireHangfire.HangfireWorker;
@@ -8,7 +9,7 @@ public class Program
     {
         var builder = Host.CreateApplicationBuilder(args);
         builder.AddServiceDefaults();
-
+        builder.Services.AddTransient<IPrintingJobs,PrintingJobs>();
         builder.Services.AddHangfire((provider,config)=>
         {
             var conn = builder.Configuration.GetConnectionString("cache");

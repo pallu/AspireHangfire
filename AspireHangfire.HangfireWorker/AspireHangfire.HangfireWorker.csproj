@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AspireHangfire.JobLibrary\AspireHangfire.JobLibrary.csproj" />
     <ProjectReference Include="..\AspireHangfire.ServiceDefaults\AspireHangfire.ServiceDefaults.csproj" />
   </ItemGroup>
 </Project>
