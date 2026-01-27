@@ -1,5 +1,6 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
+builder.AddDockerComposeEnvironment("aspire-hangfire-env");
 var cache = builder.AddRedis("cache").WithRedisInsight().WithPersistence();
 
 
